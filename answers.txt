@@ -1,0 +1,74 @@
+HEXAD
+Les colonnes représentent les types de joueur, et les lignes représentent la variation de chaque type de motivation.
+
+Motivation
+Les colonnes représentent la motivation initiale, et les lignes représentent la variation de chaque type de motivation.
+
+
+avatarPathCoefs - HEXAD
+
+Les colonnes représentent les types de joueur selon le test HEXAD et les lignes
+indiquent les motivations observées.
+
+Ainsi une case indique pour un certains type de joueur la variation de la
+motivation cible. Une valeur proche de zéro indique une faible variation. Une
+valeur positive indique une augmentation de la motivation en question, et une
+valeur négative indique une diminution de cette même motivation.
+
+Dans la matrice avatarPath, l'on cherche à observer l'impact de la présence d'un
+avatar sur les motivations du joueur.
+
+Pour la motivation intrasèque, il y a une diminution pour les joueurs Disruptor,
+peu de variations pour les joueurs Socialiser et Philanthropist et
+une augmentation pour les joueurs Achiever, Player et FreeSpirit.
+
+Pour la motivation extrasèque, il y a une diminution pour les joueurs Achiever
+et Socialiser, peu de variations pour les joueurs FreeSpirit, Disruptor et
+Philanthropist et une augmentation pour les joueurs Player.
+
+Pour l'amotivation, il y a une diminution pour les joueurs Socialiser et
+Philanthropist, peu de variations pour les joueurs FreeSpirit, Achiever et
+Disruptor et une augmentation pour les joueurs Player.
+
+
+avatarPathCoefs - Motivation
+
+Les colonnes représentent la classification des joueurs en fonction de leur
+motivation initiale la plus forte et les lignes indiques les motivations
+observées.
+
+Ainsi chaque case indique en fonction de la motivation initiale les variations
+de chaque motivations en fonction de l'élément de gamification.
+
+Dans la matrice avatarPath, l'on cherche à observer l'impact de la présence d'un
+avatar sur les motivations du joueur.
+
+MI : joueurs dont la motivation principale est intrinsèque.
+ME : joueurs dont la motivation principale est extrinsèque.
+amot : joueurs démotivés.
+
+Pour la motivation intrasèque, il y a une diminution pour les joueurs MI et une
+augmentation pour les joueurs ME et amot.
+
+Pour la motivation extrasèque, il y a peu de variations pour les joueurs amot et
+une augmentation pour les joueurs MI et ME.
+
+Pour l'amotivation, il y a peu de variations pour les joueurs amot et
+une augmentation pour les joueurs MI et ME.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
