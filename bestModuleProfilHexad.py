@@ -23,7 +23,7 @@ def calcMotivationVar(mat):
         idRow += 1
     return toReturn
 
-if __name__ == '__main__':
+def bestModuleProfilHexad(idStudent):
     modules = [] # ["avatar", "badges", "progress", "rank", "score", "timer"]
     moduleName = {0: "avatar", 1: "badges", 2: "progress", 3: "rank", 4: "score", 5: "timer"}
 
@@ -60,15 +60,6 @@ if __name__ == '__main__':
 
     with open('./userStats.csv', newline='') as csvfile:
         students = csv.DictReader(csvfile, delimiter =";")
-
-        idStudent = None
-
-        for strParam in sys.argv[1:]:
-            try:
-                param = int(strParam)
-                idStudent = param
-            except ValueError: 
-                print( "Bad parameter value: %s" % strParam, file=sys.stderr )
         
         idRow = 0
         modulePref = [0] * 6 # ["avatar", "badges", "progress", "rank", "score", "timer"]
@@ -94,7 +85,7 @@ if __name__ == '__main__':
             if modulePref[i] > modulePref[indexMax]:
                 indexMax = i
 
-        print("Le module le plus adapte a l'etudiant " + str(idStudent) + " semble etre le module '" + 
+        print("Le module le plus adapte au profil HEXAD l'etudiant " + str(idStudent) + " semble etre le module '" + 
                 moduleName.get(indexMax) + "' avec un score d'affinite de " + str(modulePref[indexMax]) + ".")
 
 
